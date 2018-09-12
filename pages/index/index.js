@@ -15,27 +15,8 @@ Page({
       currentTab: e.detail.current
     });
   },
-  scanCode(){
-    wx.scanCode({
-      onlyFromCamera: true,
-      success: (res) => {
-        console.log(res)
-        console.log(res.result)
-        if (err.errMsg.includes('ok')) {
-          app.util.showInfo(res.result)
-        }
-      },
-      fail:(err)=>{
-        console.log(err)
-        if (err.errMsg.includes('cancel')){
-          app.util.showInfo('取消扫码')
-        }
-      }
-    })
-  },
 
-
-  // 请求【范例】
+  // 接口请求【范例】
   requestDemo(){
     let obj = {}    
     app.api.loginwx(obj).then(res => {

@@ -4,7 +4,7 @@
     "pages/mall/mall",
     "pages/server/server",
     "pages/mine/mine",
-    "pages/server/info-details/info-details"
+    "pages/server/release/release"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,27 +15,27 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "易码",
-        "iconPath": "images/home/index-icon.png",
-        "selectedIconPath": "images/home/index-icon-active.png"
+        "text": "首页",
+        "iconPath": "images/tabBar/index-icon.png",
+        "selectedIconPath": "images/tabBar/index-icon-active.png"
       },
       {
         "pagePath": "pages/server/server",
         "text": "服务",
-        "iconPath": "images/home/server-icon.png",
-        "selectedIconPath": "images/home/server-icon-active.png"
+        "iconPath": "images/tabBar/server-icon.png",
+        "selectedIconPath": "images/tabBar/server-icon-active.png"
       },
       {
         "pagePath": "pages/mall/mall",
         "text": "商城",
-        "iconPath": "images/home/mall-icon.png",
-        "selectedIconPath": "images/home/mall-icon-active.png"
+        "iconPath": "images/tabBar/mall-icon.png",
+        "selectedIconPath": "images/tabBar/mall-icon-active.png"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath": "images/home/mine-icon.png",
-        "selectedIconPath": "images/home/mine-icon-active.png"
+        "iconPath": "images/tabBar/mine-icon.png",
+        "selectedIconPath": "images/tabBar/mine-icon-active.png"
       }
     ],
     "color": "#333",
