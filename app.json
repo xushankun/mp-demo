@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mall/mall",
+    "pages/server/server",
+    "pages/mine/mine",
+    "pages/server/info-details/info-details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "易码",
+        "iconPath": "images/home/index-icon.png",
+        "selectedIconPath": "images/home/index-icon-active.png"
+      },
+      {
+        "pagePath": "pages/server/server",
+        "text": "服务",
+        "iconPath": "images/home/server-icon.png",
+        "selectedIconPath": "images/home/server-icon-active.png"
+      },
+      {
+        "pagePath": "pages/mall/mall",
+        "text": "商城",
+        "iconPath": "images/home/mall-icon.png",
+        "selectedIconPath": "images/home/mall-icon-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/home/mine-icon.png",
+        "selectedIconPath": "images/home/mine-icon-active.png"
+      }
+    ],
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "selectedColor": "#2282e5",
+    "borderStyle": "black",
+    "position": "bottom",
+    "networkTimeout": {
+      "request": 6000
+    }
+  }
+}

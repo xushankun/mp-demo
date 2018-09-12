@@ -1,0 +1,148 @@
+/* pages/mine/mine.wxss */
+
+page {
+  background: #f1f1f1;
+}
+
+.mine-header {
+  width: 100%;
+  height: 320rpx;
+  background: #fff;
+}
+
+.mine-header .my-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 0;
+  background: #fff;
+}
+
+.avatar-block {
+  width: 100%;
+  padding: 0 28rpx;
+  display: flex;
+  position: absolute;
+  left: 28rpx;
+  bottom: 30rpx;
+}
+
+.avatar-block .user-block {
+  height: 120rpx;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40rpx;
+}
+
+.avatar-block .user-block .user-name {
+  color: #333;
+  font-size: 24rpx;
+}
+
+.avatar-block .user-block .reg-btn {
+  width: 170rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  color: #1cd9c9;
+  border: 1rpx solid #1cd9c9;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18rpx;
+}
+
+.header-action {
+  width: 108rpx;
+  top: 28rpx;
+  right: 28rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-action .iconfont {
+  font-size: 36rpx;
+  color: #a4a4a4;
+}
+
+.panel-view {
+}
+
+.panel-view .panel-block {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+}
+
+.panel-view .panel-block.wallet {
+  height: 160rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallet .wallet-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nums {
+  font-weight: 700;
+  font-size: 24rpx;
+  color: #333;
+}
+
+.wallet-text {
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #747474;
+}
+
+.panel-title {
+  height: 90rpx;
+  font-size: 32rpx;
+  color: #333;
+  padding-left: 28rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.panel-action-block {
+  width: 100%;
+  display: flex;
+  padding: 10rpx 0 0 0;
+  flex-wrap: wrap;
+}
+
+.panel-action-item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+
+.panel-action-item .iconfont {
+  font-size: 48rpx;
+  color: #1f6cc7;
+}
+
+.panel-action-name {
+  color: #666;
+  margin-top: 18rpx;
+}
+
+.panel-action-block2 .panel-action-item .iconfont {
+  color: #7299c2;
+}
+
+.panel-action-block2 .panel-action-item {
+  margin: 50rpx 0;
+}

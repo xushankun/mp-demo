@@ -1,0 +1,4 @@
+<!--pages/mall/mall.wxml-->
+<view>商城
+  <icon class="iconfont icon-shangcheng2" style="color:red;"></icon>
+</view>

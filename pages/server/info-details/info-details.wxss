@@ -1,0 +1,233 @@
+/* pages/server/info-details/info-details.wxss */
+
+page {
+  background: #f1f1f1;
+}
+.info-details {
+  padding-bottom: 100rpx;
+  box-sizing: border-box;
+}
+.item-block {
+  margin-bottom: 20rpx;
+  padding: 0 28rpx;
+}
+
+.item-block:last-child {
+  margin-bottom: 0;
+}
+
+.item-block .set-top-box {
+  position: absolute;
+  right: -23rpx;
+  top: -4rpx;
+  transform: rotate(45deg);
+  width: 0;
+  height: 0;
+  border-width: 0 40rpx 40rpx;
+  border-style: solid;
+  border-color: transparent transparent #1cd9c9;
+}
+
+.item-block .set-top-box .set-top {
+  width: 60rpx;
+  color: #fff;
+  font-size: 20rpx;
+  right: -40rpx;
+  top: 14rpx;
+}
+
+.item-header {
+  height: 130rpx;
+  display: flex;
+  align-items: center;
+}
+
+.item-header .item-avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+
+.item-header .item-person-info {
+  padding-left: 30rpx;
+  flex: auto;
+}
+
+.item-header .item-person-info .item-name {
+  font-weight: 700;
+  color: #333;
+}
+
+.item-header .item-person-info .item-date-block {
+  margin-top: 15rpx;
+  display: flex;
+}
+
+.item-header .item-person-info .item-date-block > view {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.item-header .offer-a-reward {
+  text-align: center;
+}
+
+.item-header .offer-a-reward .iconfont {
+  font-size: 28rpx;
+  color: #e48e2b;
+}
+
+.item-header .offer-a-reward .reward-money {
+  font-size: 24rpx;
+  color: #e48e2b;
+}
+
+.item-text {
+  line-height: 50rpx;
+  color: #333;
+}
+
+.item-image {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+.item-image .goods-image {
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.item-address {
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+}
+
+.item-address .iconfont {
+  font-size: 32rpx;
+  position: relative;
+  top: -5rpx;
+  margin-right: 15rpx;
+}
+
+.item-address .address-text {
+  font-size: 20rpx;
+  color: #666;
+}
+
+/* 评论 */
+
+.comment-title {
+  padding: 0 28rpx;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.comment-list {
+  padding-left: 28rpx;
+}
+
+.comment-item {
+}
+
+.comment-item-info {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+}
+
+.comment-item-info .item-avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+
+.comment-item-info .user-name {
+  flex: auto;
+  padding-left: 30rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.comment-text-block {
+  padding: 0 28rpx 30rpx 100rpx;
+  box-sizing: border-box;
+}
+
+.comment-text-block .comment-text {
+  color: #333;
+  line-height: 50rpx;
+}
+
+.comment-date-btn {
+  height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-date-btn .comment-date {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.comment-date-btn .iconfont {
+  color: #666;
+}
+
+.reply-block {
+  background: #fafafa;
+  padding: 15rpx 20rpx;
+}
+
+.reply-block .reply-user-name {
+  color: #4e667e;
+}
+
+.reply-block > text {
+  font-size: 24rpx;
+}
+
+.reply-block .reply-tips {
+  color: #333;
+}
+
+.reply-block .reply-text {
+  color: #666;
+}
+
+.footer-fixed-action {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-fixed-action .action-item {
+  height: 100%;
+  flex: 1;
+  font-size: 28rpx;
+  color: #343434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-fixed-action .action-item .iconfont {
+  color: #343434;
+  position: relative;
+  top: -4rpx;
+}
+
+.footer-fixed-action .action-item.connect-btn {
+  background: #2282e6;
+  color: #fff;
+  font-size: 32rpx;
+}

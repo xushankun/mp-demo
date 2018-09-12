@@ -1,0 +1,55 @@
+<!--pages/index/index.wxml-->
+<view class='bgf1'>
+  <swiper class="banner-block bgff" circular autoplay current="{{currentTab}}" previous-margin="48rpx" next-margin="48rpx" bindchange="bindchange">
+    <swiper-item wx:for="{{bannerList}}" wx:key="index">
+      <image mode="scaleToFill" src="{{item}}" class="slide-image {{currentTab === index ? 'active' : ''}}" />
+    </swiper-item>
+  </swiper>
+  <!-- 统计 -->
+  <view class="count-block bgff mt10">
+    <view class='logo-block'>
+      <image mode="aspectFill" src='../../images/index/logo.png'></image>
+    </view>
+
+    <view class="count-tips">
+      <view class="tips-text">扫码尽有</view>
+    </view>
+    <view class="count-list">
+      <view class="count-item">
+        <view class="count-text textRight">您是第</view>
+        <view class="count-nums">43</view>
+        <view class="count-text">位用户</view>
+      </view>
+      <view class="count-item">
+        <view class="count-text textRight">累计扫码</view>
+        <view class='count-nums'>5.89</view>
+        <view class="count-text">万次数</view>
+      </view>
+    </view>
+  </view>
+  <!-- 扫一扫 -->
+  <view class="mt10 bgff scan-count-block">
+    <view class="scan-block">
+      <image mode="aspectFill" src='../../images/index/saomiao.png'></image>
+      <view class="scan-btn" catchtap="scanCode">扫一扫</view>
+    </view>
+    <view class="scan-count border-top">
+      <view class="scan-count-item">
+        <view class="count-title">防丢失码</view>
+        <view class="count-text-block">
+          <view class="scan-count-text textRight">被扫</view>
+          <view class="scan-count-nums anti-lost">1985</view>
+          <view class="scan-count-text">次</view>
+        </view>
+      </view>
+      <view class="scan-count-item">
+        <view class="count-title">快速挪车码</view>
+        <view class="count-text-block">
+          <view class="scan-count-text textRight">被扫</view>
+          <view class="scan-count-nums move-car">8888</view>
+          <view class="scan-count-text">次</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
