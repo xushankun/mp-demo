@@ -1,7 +1,7 @@
 // Created by shankun on 2018/8/22
 let apiConfig = {
   baseUrl: "https://xxxapi.com:33008",
-  // AppID: "wxb049beb3fea30b12",                        // 小程序ID
+  // AppID: "",                        // 小程序ID
   // AppSecret: ""       // 小程序密钥
 }
 
