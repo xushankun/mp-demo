@@ -1,8 +1,10 @@
 <!--pages/server/server.wxml-->
 <view class="service-block">
- 
+
 </view>
 <!-- 发布 -->
-<view class="release-btn">
-  <icon class="iconfont icon-fabuxinxi"></icon>
-</view>
+<navigator url="release/release" hover-class="other-navigator-hover">
+  <view class="release-btn">
+    <icon class="iconfont icon-fabuxinxi"></icon>
+  </view>
+</navigator>
