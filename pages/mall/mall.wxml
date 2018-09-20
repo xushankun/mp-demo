@@ -1,4 +1,24 @@
 <!--pages/mall/mall.wxml-->
-<view>商城
-  <icon class="iconfont icon-shangcheng2" style="color:red;"></icon>
+<view class="full-screen-view mall-view">
+  <view class="header-city border-top">
+    <view class="city-row bgff pr">
+      <scroll-view scroll-x class="city-row-scroll" scroll-with-animation scroll-into-view="{{currTabId}}" scroll-left="{{scrollLeft}}">
+        <text class="city-row-item pr {{index === currIndex ? 'active' : ''}}" id="active{{index}}" wx:for="{{cityList}}" wx:key="{{index}}" data-index="{{index}}" catchtap="selectCity">{{item}}</text>
+      </scroll-view>
+      <image class="nav-shadow" mode="aspectFill" src='../../images/nav-shadow.png'></image>
+      <view class="city-panel-title bgff pa" wx:if="{{isCityPanel}}">选择城市</view>
+      <view class="more-btn bgff" catchtap="toggleCityPanel">
+      <text>···</text>
+        <icon class="iconfont icon-x- more-icon"></icon>
+      </view>
+    </view>
+    <view class="city-row-col bgff border-top" wx:if="{{isCityPanel}}">
+      <view class="city-row-col-item {{index === currIndex ? 'active' : ''}}" wx:for="{{cityList}}" wx:key="{{index}}" data-index="{{index}}" catchtap="panelSelectCity">{{item}}</view>
+    </view>
+  </view>
+  
+  <view class="swiper-area">
+    <view class="item-block bg-clip" wx:if="{{currIndex === index}}" wx:for="{{cityList}}" wx:key="{{index}}">{{item}}</view>
+  </view>
+
 </view>

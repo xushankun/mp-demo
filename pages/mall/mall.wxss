@@ -1,1 +1,142 @@
 /* pages/mall/mall.wxss */
+
+page {
+  background: #eee;
+}
+
+.mall-view {
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+
+.header-city {
+  box-shadow: 0rpx 8rpx 24rpx rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.city-row {
+  height: 88rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.city-row .city-row-scroll {
+  width: calc(100% - 88rpx);
+  height: 100%;
+  white-space: nowrap;
+}
+
+.city-row .city-row-item {
+  display: inline-block;
+  height: 100%;
+  line-height: 88rpx;
+  text-align: center;
+  color: #4e4e4e;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.city-row .city-row-item.active {
+  color: #0cc2ff;
+}
+
+.city-row .city-row-item.active::after {
+  content: '';
+  display: block;
+  width: calc(100% - 60rpx);
+  height: 4rpx;
+  background: #0cc2ff;
+  position: absolute;
+  bottom: 0;
+}
+
+.city-row .city-panel-title {
+  width: calc(100% - 88rpx);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+/* nav-按钮 */
+
+.more-btn {
+  width: 88rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-shadow {
+  width: 16rpx;
+  height: 88rpx;
+  position: absolute;
+  right: 88rpx;
+}
+
+.more-btn .more-icon {
+  font-size: 6rpx;
+  color: #9f9f9f;
+}
+
+/* 城市面板 */
+
+.city-row-col {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 88rpx;
+  z-index: 99;
+}
+
+.city-row-col .city-row-col-item {
+  width: 20%;
+  height: 88rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4e4e4e;
+  border-right: 1rpx solid #ebebeb;
+  border-bottom: 1rpx solid #ebebeb;
+  box-sizing: border-box;
+}
+
+.city-row-col .city-row-col-item:nth-child(5n) {
+  border-right: 0;
+}
+
+.city-row-col .city-row-col-item.active {
+  color: #0cc2ff;
+}
+
+/* swiper */
+
+.swiper-area {
+  flex: auto;
+}
+
+.item-block {
+  height: 800rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-clip {
+  background: linear-gradient(to bottom, red, blue);
+  background-size: 40% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 100rpx;
+  font-weight: 700;
+}
