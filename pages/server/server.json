@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "服务"
+  "navigationBarTitleText": "服务",
+  "usingComponents": {
+    "displayPartText": "../components/display-part-text/display-part-text"
+  }
 }

@@ -22,3 +22,9 @@ page {
   color: #fff;
   font-size: 40rpx;
 }
+
+.service-content {
+  color: #414141;
+  background: #fff;
+  padding: 10rpx 30rpx;
+}
