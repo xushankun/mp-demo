@@ -46,5 +46,11 @@
     "networkTimeout": {
       "request": 6000
     }
+  },
+  "plugins": {
+    "chooseCity": {
+      "version": "1.0.0",
+      "provider": "wxcdf8cca1bde64773"
+    }
   }
 }

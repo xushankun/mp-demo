@@ -1,4 +1,4 @@
 <!--pages/mine/mine.wxml-->
 <view>
-  我的
+    <city-choose haveHistory="{{false}}" catch:confirm="confirm" />
 </view>

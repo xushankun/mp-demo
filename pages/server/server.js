@@ -3,6 +3,13 @@ Page({
   data: {
  
   },
+  actionHandle(e){
+    if (e.detail){
+      console.log('show')
+    } else {
+      console.log('hide')
+    }
+  },
   onLoad: function (options) {
   
   },
